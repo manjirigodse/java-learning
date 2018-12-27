@@ -1,33 +1,40 @@
 public class PrimeNumber {
     public static void main(String[] args) {
-        int i=1;
-        int x = 31;
-        double y = Math.sqrt(x);
-        int n = (int)y;
+        long i=1;
+        long x = 5915587277L;
+        long startTime = System.currentTimeMillis();
 
-        if(x == 1 || x == 2 || x==3){
-            prime();
+        boolean isPrime = true;
+
+        long n = (long) Math.sqrt(x);
+
+        if(x == 1 || x == 2 || x == 3){
+            isPrime = true;
         }else if(x % 2 == 0 || x % 3 == 0){
-            notPrime();
+            isPrime = false;
         }else {
             while( 6*i <= n){
+                System.out.print(" " + i);
                 if(x % (6*i-1) == 0){
-                    notPrime();
+                    isPrime = false;
+                    break;
                 }else if(x % (6*i+1) == 0){
-                    notPrime();
+                    isPrime = false;
+                    break;
                 }
                 i++ ;
             }
-            prime();
         }
 
-
+        printStatus(isPrime);
+        System.out.println("Time Taken : "+ (System.currentTimeMillis()-startTime) + "ms");
     }
 
-    public static void prime() {
-        System.out.println("Prime Number");
-    }
-    public static void notPrime() {
-        System.out.println("Not a Prime Number");
+    public static void printStatus(boolean isPrime){
+        if (isPrime){
+            System.out.println("\nPrime Number");
+        } else {
+            System.out.println("\nNot a Prime Number");
+        }
     }
 }
