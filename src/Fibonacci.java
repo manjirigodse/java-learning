@@ -22,7 +22,7 @@ public class Fibonacci {
 
     public static void withRecursion(int a,int b, int n) {
         if(a==0 && b==1){
-            System.out.println("\n withRecursion");
+            System.out.println("\nwithRecursion");
             System.out.print(a + " ");
             System.out.print(b + " ");
         }
