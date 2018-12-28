@@ -12,7 +12,7 @@ public class PrimeNumber {
             isPrime = false;
         }else {
             while( 6*i <= n){
-                System.out.print(" " + i);
+                System.out.print(" " +i);
                 if(x % (6*i-1) == 0){
                     isPrime = false;
                     break;
@@ -24,7 +24,7 @@ public class PrimeNumber {
             }
         }
         printStatus(isPrime);
-        System.out.println("Time Taken : "+ (System.currentTimeMillis()-startTime) + "ms");
+        System.out.println("Time Taken: "+ (System.currentTimeMillis()-startTime) + "ms");
     }
 
     public static void printStatus(boolean isPrime){
