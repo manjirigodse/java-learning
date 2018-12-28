@@ -3,9 +3,7 @@ public class PrimeNumber {
         long i=1;
         long x = 5915587277L;
         long startTime = System.currentTimeMillis();
-
         boolean isPrime = true;
-
         long n = (long) Math.sqrt(x);
 
         if(x == 1 || x == 2 || x == 3){
@@ -25,7 +23,6 @@ public class PrimeNumber {
                 i++ ;
             }
         }
-
         printStatus(isPrime);
         System.out.println("Time Taken : "+ (System.currentTimeMillis()-startTime) + "ms");
     }
