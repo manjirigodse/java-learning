@@ -17,22 +17,20 @@ public class ComplexNumber {
 
     }
 
-    public static ComplexNumber add(ComplexNumber n1, ComplexNumber n2){
-       ComplexNumber addition = new ComplexNumber();
-       addition.real = n1.real + n2.real;
-       addition.imag = n1.imag + n2.imag;
-       return addition;
+    public ComplexNumber add(ComplexNumber n1){
+       return new ComplexNumber(this.real + n1.real, this.imag + n1.imag);
     }
 
-    public static ComplexNumber sub(ComplexNumber n1, ComplexNumber n2){
-        ComplexNumber substraction = new ComplexNumber();
-        substraction.real = n1.real - n2.real;
-        substraction.imag = n1.imag - n2.imag;
-        return substraction;
+    public ComplexNumber sub(ComplexNumber n1){
+        return new ComplexNumber(this.real - n1.real, this.imag - n1.imag);
+    }
+
+    public ComplexNumber mult(ComplexNumber n1) {
+        return new ComplexNumber(n1.real * this.real - n1.imag * this.imag, n1.real * this.imag + n1.imag * this.real);
     }
 
     public static void display(ComplexNumber number, String message) {
-        System.out.println( message + number.real + " + " + number.imag + "i");
+        System.out.println(message + number.real + " + " + number.imag + "i");
     }
 }
 
