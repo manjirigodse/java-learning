@@ -12,6 +12,8 @@ public class Calculation {
         ComplexNumber.display(addition, "Addition is: " );
         ComplexNumber.display(substraction, "Substraction is: " );
         ComplexNumber.display(multiplication, "Multiplication is: " );
+
+        System.out.println("n1 iota: " + ComplexNumber.iota);
     }
 
 

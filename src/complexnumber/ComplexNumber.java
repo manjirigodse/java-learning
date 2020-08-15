@@ -5,6 +5,7 @@ import java.util.concurrent.Callable;
 public class ComplexNumber {
     public int real;
     public int imag;
+    public static int iota = -1;
 
     //parameterized constructor
     public ComplexNumber(int real, int imag) {
