@@ -10,5 +10,9 @@ public class User {
         Honda honda1 = new Honda();
         honda1.speedLimit = 50;
 
+        bike1.servicing();
+        honda1.servicing();
+
+        System.out.println(Honda.chassiNumber);
     }
 }

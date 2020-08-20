@@ -40,10 +40,8 @@ class Circle{
     double area(int radius){
         Operation op=new Operation();
         //int rsquare=op.square(radius);//code reusability (i.e. delegates the method call).
-        return pi*op.square(radius);
+        return pi/4*op.square(radius);
     }
-
-
 
     public static void main(String args[]){
         Circle c=new Circle();
