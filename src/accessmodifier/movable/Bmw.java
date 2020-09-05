@@ -3,11 +3,12 @@ package accessmodifier.movable;
 
 public class Bmw extends Car{
 
-    public void setChassisNumber(int chessiNumber, int chassiSeq)  {
-        this.chassiNumber = chessiNumber;
+    public void setChassisNumber(int chassiNumber, int chassiSeq)  {
+        this.chassiNumber = chassiNumber;
     }
 
     public int getChessisNumber() {
         return this.chassiNumber;
     }
+
 }

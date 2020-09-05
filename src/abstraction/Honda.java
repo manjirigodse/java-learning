@@ -17,4 +17,13 @@ public class Honda extends Bike{
 
     };
 
+    @Override
+    public void changeGear() {
+        System.out.println("change honda gear");
+    }
+
+    @Override
+    public void followTrafficRules() {
+        System.out.println("Honda follows traffic rules");
+    }
 }

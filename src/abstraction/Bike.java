@@ -1,6 +1,6 @@
 package abstraction;
 
-public abstract class Bike implements Interface1{
+public abstract class Bike extends Aaa implements Interface1 {
 
     /*
     Abstract class is declared with abstract keyword.
@@ -22,6 +22,17 @@ public abstract class Bike implements Interface1{
         System.out.println("Bike sevicing" );
     }
 
+    void accelerate(){
 
+    }
 
+    @Override
+    public void changeGear() {
+        System.out.println("change bike gear");
+    }
+
+    @Override
+    void method1() {
+        super.method1();
+    }
 }
